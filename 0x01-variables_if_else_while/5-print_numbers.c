@@ -6,13 +6,14 @@
  */
 int main(void)
 {
-	char single = 0;
+	int single = 0;
 
 	while (single < 10)
 	{
 		printf("%d",single);
 		single++;
 	}
+	printf('\n')
 	return (0);
 }
 
