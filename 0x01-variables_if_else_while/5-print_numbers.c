@@ -13,7 +13,7 @@ int main(void)
 		printf("%d", single);
 		single++;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
 
