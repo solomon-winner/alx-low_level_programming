@@ -6,16 +6,14 @@
  */
 int main(void)
 {
-	int single = 0;
-	char singleChar;
+	int single = 0
 
 	while (single < 10)
 	{
-		singleChar =single + '0';
-		putchar(singleChar);
+		putchar(single);
 		single++;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
 
