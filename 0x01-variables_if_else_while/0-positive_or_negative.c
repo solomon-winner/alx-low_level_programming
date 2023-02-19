@@ -4,6 +4,12 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main-is the entry point
+ *
+ * 
+ * return-always 0 (is success)
+ */
 int main(void)
 {
 	int n;
