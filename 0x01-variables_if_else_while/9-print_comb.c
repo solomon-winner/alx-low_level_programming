@@ -12,8 +12,11 @@ int main(void)
 	while (singleDigit <= '9')
 	{
 		putchar(singleDigit);
+		if (singleDigit != '9')
+		{
 		putchar(',');
 		putchar(' ');
+		}
 		singleDigit++;
 	}
 	putchar('\n');
