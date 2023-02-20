@@ -6,8 +6,9 @@
  */
 int main(void)
 {
-	int single = 0
-
+	int single = 0;
+	
+	single = '0';
 	while (single < 10)
 	{
 		putchar(single);
