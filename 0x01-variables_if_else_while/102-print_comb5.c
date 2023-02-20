@@ -20,7 +20,7 @@ int main(void)
 			putchar(' ');
 			putchar((b / 10) + '0');
 			putchar((b % 10) + '0');
-			if (count != 4949)
+			if (c != 4949)
 			{
 				putchar(',');
 				putchar(' ');
