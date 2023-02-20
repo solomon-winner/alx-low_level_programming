@@ -21,12 +21,13 @@ int main(void)
 				putchar(a + '0');
 				putchar(b + '0');
 				putchar(w + '0');
-				if (c != 118)
+				if (c != 119)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 				w++;
+				c++;
 			}
 		b++;
 		}
