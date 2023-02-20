@@ -10,29 +10,28 @@ int main(void)
         int b, w;
         int c = 0;
 
-        while (a <= 7)
-        {
-                b = a + 1;
-                while (b <= 8)
-                {
-                        w = b + 1;
-                        while (w <= 9)
-                        {
-                                putchar(a + '0');
+	 while (a <= 7)
+	{
+		b = a + 1;
+			while (b <= 8)
+			{
+				w = b + 1;
+				while (w <= 9)
+				{
+			       	putchar(a + '0');
                                 putchar(b + '0');
                                 putchar(w + '0');
                                 if (c != 119)
                                 {
-                                        putchar(',');
-                                        putchar(' ');
-                                }
-                                w++;
-                                ct++;
-                        }
-                        b++;
-                }
-                a++;
-        }
-        putchar('\n');
-        return (0);
+					putchar(',');
+					putchar(' ');
+				}
+				w++;
+			}
+		b++;
+		}
+	a++;
+	}
+	putchar('\n');
+	return (0);
 }
