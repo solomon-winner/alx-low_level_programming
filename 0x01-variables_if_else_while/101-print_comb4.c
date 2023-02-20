@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-        int a = 0;
-        int b, w;
-        int c = 0;
+	int a = 0;
+	int b, w;
+	int c = 0;
 
-	 while (a <= 7)
+       	while (a <= 7)
 	{
 		b = a + 1;
-			while (b <= 8)
+		while (b <= 8)
+		{
+			w = b + 1;
+			while (w <= 9)
 			{
-				w = b + 1;
-				while (w <= 9)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(w + '0');
+				if (c != 119)
 				{
-			       	putchar(a + '0');
-                                putchar(b + '0');
-                                putchar(w + '0');
-                                if (c != 119)
-                                {
 					putchar(',');
 					putchar(' ');
 				}
@@ -30,8 +30,8 @@ int main(void)
 			}
 		b++;
 		}
-	a++;
+		a++;
 	}
-	putchar('\n');
-	return (0);
+	 putchar('\n');
+	 return (0);
 }
