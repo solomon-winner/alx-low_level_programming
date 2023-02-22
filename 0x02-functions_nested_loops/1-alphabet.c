@@ -4,11 +4,10 @@
  * the code- prints the alphabet, in lowercase, followed by a new line.
  *
  */
-void print_alphabet()
+void print_alphabet(void)
 {
 	char alphabet = 'a';
-	
-	while(alphabet <= 'z')
+	while (alphabet <= 'z')
 	{
 		_putchar(alphabet);
 		alphabet++;
