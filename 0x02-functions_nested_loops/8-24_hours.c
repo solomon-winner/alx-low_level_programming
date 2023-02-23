@@ -8,20 +8,19 @@ void jack_bauer(void)
 {
 	int minute;
 	int second;
+	char z = '0'
 
 	for (minute = 0; minute <= 23; minute++)
 	{
-		if (minute < 10 && minute >= 0)
+		if (minute >= 0 && minute < 10)
 		{
-			minute = minute + '0';
-			minute = minute + minute;
+			minute = z + minute;
 		}
 		for (second = 0; second < 60; second++)
 		{
-			if (second < 10 && second >= 0)
+			if (second >= 0 && second < 10)
 			{
-				second = second + '0';
-				second = second + second;
+				second = z + second;
 			}
 			_putchar(minute +  ':' + second);
 			_putchar('\n');
