@@ -1,26 +1,29 @@
 #include "main.h"
 
 /**
- * print_diagonal - draws a diagonal line 
- * @n: the number of times printed
- * Return: void
+ * print_diagonal - print slash
+ * @n: number of slash
  */
+
 void print_diagonal(int n)
 {
-	int i;
+	int i = 0;
 	int indent;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	for (i = 0; i < n; i++)
-	{
-		for (indent = 0; indent < i; indent++)
+		for (; i < n; i++)
 		{
-			_putchar(' ');
+			for (indent = 0; indent < i; indent++)
+			{
+				_putchar(' ');
+			}
+			_putchar(92);
+			_putchar('\n');
 		}
-		_putchar('\\');
+	}
+	else
+	{
 		_putchar('\n');
 	}
 }
