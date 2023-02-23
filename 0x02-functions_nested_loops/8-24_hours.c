@@ -11,17 +11,9 @@ void jack_bauer(void)
 
 	for (minute = 0; minute <= 23; minute++)
 	{
-		if (minute >= 0 && minute < 10)
-		{
-			minute = '0' + minute;
-		}
 		for (second = 0; second < 60; second++)
 		{
-			if (second >= 0 && second < 10)
-			{
-				second = '0' + second;
-			}
-			_putchar(minute +  ':' + second);
+			_putchar((minute / 10) + '0'  +  ':' + (second / 10 ) + '0');
 			_putchar('\n');
 		}
 	}
