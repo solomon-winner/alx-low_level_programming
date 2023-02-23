@@ -8,7 +8,7 @@ void jack_bauer(void)
 {
 	int minute;
 	int second;
-	char z = '0'
+	char z = '0';
 
 	for (minute = 0; minute <= 23; minute++)
 	{
