@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - prints the prime factor 
+ * main - print prime factor of the number
  * Return: 0
  */
 int main(void)
