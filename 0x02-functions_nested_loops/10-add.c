@@ -2,9 +2,11 @@
 
 /**
  * add - adds two integers
- * Return: Always 0
+ * @a: integer parameter
+ * @b: integer parameter
+ * Return: Always the sum
  */
 int add(int a, int b)
 {
-	return (a+b);
+	return (a + b);
 }
