@@ -7,11 +7,16 @@
  */
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
+	char A = 'A';
+	char Z = 'Z';
+	char a = 'a';
+	char z = 'z';
+
+	if (c >= A && c <= Z)
 	{
 		return (1);
 	}
-	if (c >= 97 && c <= 122)
+	if (c >= a && c <= z)
 	{
 		return (0);
 	}
