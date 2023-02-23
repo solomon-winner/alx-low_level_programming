@@ -27,7 +27,7 @@ void jack_bauer(void)
 				zs = 0 + '0';
 				second = second + second;
 			}
-			_putchar(minute, ':', second);
+			_putchar(minute +  ':' + second);
 			_putchar('\n');
 		}
 	}
