@@ -6,14 +6,14 @@
  *
  * Return: void
  */
-
-
 void print_diagonal(int n)
 {
 	int i, indent;
 
 	if (n <= 0)
+	{
 		_putchar('\n');
+	}
 	for (i = 0; i < n; i++)
 	{
 		for (indent = 0; indent < i; indent++)
