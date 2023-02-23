@@ -18,5 +18,5 @@ void print_number(int n);
 
 #endif 
 /*
- * solomon-winner
+  solomon-winner
  */
