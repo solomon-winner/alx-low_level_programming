@@ -14,11 +14,11 @@ void puts2(char *str)
 	{
 		counter++;
 	}
+	_putchar(str[0]);
 	while (c <= counter - 1)
 	{
-		if (c + 2 <= counter)
+		if (c + 2 <= counter - 1)
 		{
-			_putchar(str[0]);
 			_putchar(str[c + 2]);
 			c++;
 			counter++;
