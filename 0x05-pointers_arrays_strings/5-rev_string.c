@@ -9,7 +9,7 @@ void print_rev(char *s)
 {
 	int counter = 0;
 	int modifiedCounter;
-	int reverese = 0;
+	int reverse = 0;
 	char swap;
 
 	while (s[counter] != '\0')
