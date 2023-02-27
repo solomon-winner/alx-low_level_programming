@@ -19,8 +19,9 @@ void print_rev(char *s)
 	modifiedCounter = counter - 1;
 	while (modifiedCounter >= 0 && reverse < modifiedCounter)
 	{
-		swap = s[modifiedCounter];
-		s[reverse] = swap;
+		swap = s[reverse];
+		s[reverse] = s[modifiedCounter];
+		s[modifiedCounter] = swap;
 		modifiedCounter--;
 		reverse++;
 	}
