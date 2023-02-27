@@ -25,5 +25,4 @@ void rev_string(char *s)
 		modifiedCounter--;
 		reverse++;
 	}
-	_putchar('\n');
 }
