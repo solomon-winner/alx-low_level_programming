@@ -14,7 +14,7 @@ void puts_half(char *str)
 		counter++;
 	}
 	n = (counter - 1) / 2;
-	if (counter % 2 == 0)
+	if ((counter - 1) % 2 == 0)
 	{
 		m = n + 1;
 		for (;m < counter;m++)
@@ -29,4 +29,5 @@ void puts_half(char *str)
 			_putchar(str[n]);
 		}
 	}
+	_putchar('\n');
 }
