@@ -14,9 +14,9 @@ void print_array(int *a, int n)
 		printf("%d",*a++);
 		if (counter != n - 1)
 		{
-			_putchar(", ");
+			printf(", ");
 		}
 		counter++;
 	}
-	_putchar('\n');
+	printf('\n');
 }
