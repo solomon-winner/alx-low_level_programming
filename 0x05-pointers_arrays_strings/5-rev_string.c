@@ -8,16 +8,21 @@
 void print_rev(char *s)
 {
 	int counter = 0;
+	int modifiedCounter;
+	int reverese = 0;
+	char swap;
 
 	while (s[counter] != '\0')
 	{
 		counter++;
 	}
-	counter = counter - 1;
-	while (counter >= 0)
+	modifiedCounter = counter - 1;
+	while (modifiedCounter >= 0 && reverse < modifiedCounter)
 	{
-		s[counter];
-		counter--;
+		swap = s[modifiedCounter];
+		s[reverse] = swap;
+		modifiedCounter--;
+		reverse++;
 	}
 	_putchar('\n');
 }
