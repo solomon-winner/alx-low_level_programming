@@ -22,9 +22,6 @@ char *_strncat(char *dest, char *src, int n)
 		dest[index] = src[loop];
 		index++;
 	}
-	if (dest[index] != '\n')
-	{
-		dest[index] = '\n';
-	}
+	dest[index] = '\0';
 	return (dest);
 }
