@@ -18,5 +18,4 @@ void reverse_array(int *a, int n)
 		a[counter] = a[n];
 		a[countDown--] = swap;
 	}
-	return (a);
 }
