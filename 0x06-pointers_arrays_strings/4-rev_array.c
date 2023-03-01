@@ -12,7 +12,7 @@ void reverse_array(int *a, int n)
 	int counter = 0;
 	int countDown = n - 1;
 
-	for (; counter < n; counter++)
+	for (; counter < countDown; counter++)
 	{
 		swap = a[counter];
 		a[counter] = a[countDown];
