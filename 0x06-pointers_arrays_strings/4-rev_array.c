@@ -8,19 +8,15 @@
  */
 void reverse_array(int *a, int n)
 {
-	int Array[n-1];
-	int count = 0;
+	int swap;
+	int counter = 0;
 	int countDown = n - 1;
 
-	for (; count < n; count++)
+	for (; counter < n; counter++)
 	{
-		Array[count] == a[count];
-	}
-	count = 0;
-	for (; countDown >= 0; countDown--)
-	{
-		a[count] = Array[countDown];
-		count++;
+		swap = a[counter];
+		a[counter] = a[n];
+		a[countDown--] = swap;
 	}
 	return (a);
 }
