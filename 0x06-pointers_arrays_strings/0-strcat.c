@@ -8,21 +8,19 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int index;
-	char Array[15];
+	int index = 0;
 	int loop = 0;
 
-	for (index = 0; index < 6; index++)
+	while(dest[index] != '\0')
 	{
-		Array[loop] = src[index];
-		loop++;
+		index++;
 	}
-	for (index = 0;index < 8; index++)
+	while (src[loop] != '\0')
 	{
-		Array[loop] = dest[index];
+		dest[index] = src[loop];
 		loop++;
+		index++;
 	}
-	Array[loop] = '\0';
-	dest = Array;
+	dest[index] = '\0';
 	return (dest);
 }
