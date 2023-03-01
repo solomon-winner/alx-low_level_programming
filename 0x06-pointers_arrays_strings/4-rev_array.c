@@ -8,7 +8,7 @@
  */
 void reverse_array(int *a, int n)
 {
-	int Array[n];
+	int Array[] = a;
 	int count = 0;
 	int countDown = n - 1;
 
