@@ -9,7 +9,7 @@ char *cap_string(char *a)
 {
 	int counter = 0;
 	int start;
-	int Characters[] = {9,10,32,33,34,40,41,44,46,59,63,123,125};
+	char Characters[] = {9,10,32,33,34,40,41,44,46,59,63,123,125};
 	int i;
 	bool flag = false;
 
