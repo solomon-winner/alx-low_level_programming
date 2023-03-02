@@ -16,7 +16,7 @@ char *leet(char *e)
 		for (b = 0; b <= 9; b++)
 		{
 			if (q[b] == e[b])
-				s[a] = p[b];
+				e[a] = p[b];
 		}
 	}
 	return (e);
