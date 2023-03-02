@@ -9,18 +9,10 @@ char *cap_string(char *a)
 {
 	int counter = 0;
 	int start;
-	char Characters[] = {9,10,32,33,34,40,41,44,46,59,63,123,125};
-	int i;
-	bool flag = false;
 
 	while (a[counter] != '\0')
 	{
-		for (i = 0; i < 13; i++)
-		{
-			if (a[counter] == Characters[i])
-				flag = true;
-		}
-		if (flag == true)
+		if (a[counter] == 9 || a[counter] == 10 || a[counter] == 32 || a[counter] == 33 || a[counter] == 34 || a[counter] == 40 || a[counter] == 41 || a[counter] == 44 || a[counter] == 46 || a[counter] == 59 || a[counter] == 63 || a[counter] == 123 || a[counter] == 125)
 		{
 			start = counter + 1;
 			if (a[start] <= 122 && a[start] >= 97)
