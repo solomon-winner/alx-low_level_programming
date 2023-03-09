@@ -17,7 +17,6 @@ int _sqrt_recursion(int n)
 			return (n / 2);
 		else if (n / 4 * n / 4)
 			return (n / 4);
-		else if (
 		_sqrt_recursion(n / 2);
 	}
 	else if (n % 3 == 0)
