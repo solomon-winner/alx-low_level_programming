@@ -5,11 +5,11 @@
  * @c: parameter
  * Return: char
  */
-char paliChecker(char *c)
+char paliChecker(char c)
 {
 	if (c != '\0')
 		paliChecker(c++);
-	return (*c);
+	return (c);
 }
 /**
  * is_palindrome - checks if the function is palindrome
@@ -18,7 +18,8 @@ char paliChecker(char *c)
  */
 int is_palindrome(char *s)
 {
-	if (s++ == palichecker(*s))
+	if (*s == palichecker(*s))
+		s++
 		return (1);
 	return (0);
 }
