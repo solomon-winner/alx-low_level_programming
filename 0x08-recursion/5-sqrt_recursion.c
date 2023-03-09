@@ -14,6 +14,12 @@ int sqrtFun(int i, int j)
 	return (sqrtFun(i + 1, j));
 }
 
+/**
+ * sqrtFun - checks the square root
+ * @i: parameter
+ * @j: parameter
+ * Return: the square root
+ */
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
@@ -21,9 +27,3 @@ int _sqrt_recursion(int n)
 	return (sqrtFun(1, n));
 }
 
-/**
- * sqrtFun - checks the square root
- * @i: parameter
- * @j: parameter
- * Return: the square root
- */
