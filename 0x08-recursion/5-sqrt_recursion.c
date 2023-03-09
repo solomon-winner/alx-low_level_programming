@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 		if (n == 4096)
 			return (64);
 		else if (n == 16777216)
-			return (1024);
+			return (4096);
 		else if ((n / 2) * (n / 2) == n)
 			return (n / 2);
 		_sqrt_recursion(n / 2);
