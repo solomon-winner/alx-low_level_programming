@@ -18,8 +18,8 @@ char paliChecker(char c)
  */
 int is_palindrome(char *s)
 {
-	if (*s == palichecker(*s))
-		s++
+	if (*s == paliChecker(*s))
+		s++;
 		return (1);
 	return (0);
 }
