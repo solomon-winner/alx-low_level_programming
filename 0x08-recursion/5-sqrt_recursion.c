@@ -7,11 +7,11 @@
  */
 int sqrtFun(int i, int j)
 {
-        if (i * i == j)
-                return (i);
-        if (i * i > j)
-                return (-1);
-        return (sqrtFun(i + 1, j));
+	if (i * i == j)
+		return (i);
+	if (i * i > j)
+		return (-1);
+	return (sqrtFun(i + 1, j));
 }
 
 int _sqrt_recursion(int n)
