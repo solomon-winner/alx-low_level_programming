@@ -7,35 +7,23 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n % 2 == 0)
-	{
-		if (n == 4096)
-			return (64);
-		else if (n == 16777216)
-			return (4096);
-		else if ((n / 2) * (n / 2) == n)
-			return (n / 2);
-		_sqrt_recursion(n / 2);
-	}
-	else if (n % 3 == 0)
-	{
-		if ((n / 3) * (n / 3) == n)
-			return (n / 3);
-		_sqrt_recursion(n / 3);
-	}
-	else if (n % 5 == 0)
-	{
-		if ((n / 5) * (n / 5) == n)
-			return (n / 5);
-		_sqrt_recursion(n / 5);
-	}
-	else if (n % 7 == 0)
-	{
-		if ((n / 7) * (n / 7) == n)
-			return (n / 7);
-		_sqrt_recursion(n / 7);
-	}
-	else if (n == 1)
-		return (1);
-	return (-1);
+	if (n == 0)
+		return (0);
+	return (sqrt(1, n));
 }
+
+int sqrt(int i, int j)
+{
+	if (i * i == j)
+		return (i);
+	if (i * i > j)
+		return (-1);
+	return (sqrt(i + 1, j));
+}
+
+/**
+ * sqrt - checks the square root
+ * @i: parameter
+ * @j: parameter
+ * Return: the square root
+ */
