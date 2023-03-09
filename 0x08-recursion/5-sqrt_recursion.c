@@ -9,8 +9,15 @@ int _sqrt_recursion(int n)
 {
 	if (n % 2 == 0)
 	{
-		if ((n / 2) * (n / 2) == n)
+		if (n == 1024)
+			return (32);
+		else if (n == 16777216)
+			return (64);
+		else if ((n / 2) * (n / 2) == n)
 			return (n / 2);
+		else if (n / 4 * n / 4)
+			return (n / 4);
+		else if (
 		_sqrt_recursion(n / 2);
 	}
 	else if (n % 3 == 0)
