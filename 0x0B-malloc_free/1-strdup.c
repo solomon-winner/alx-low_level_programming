@@ -35,7 +35,7 @@ char *_copy(char *destination, char *source)
 }
 
 /**
- * strdup - returns a pointer
+ * _strdup - returns a pointer
  * @str: the string
  * Return: NULL or pointer
  */
