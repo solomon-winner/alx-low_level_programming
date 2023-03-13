@@ -8,13 +8,13 @@
 
 int _length(char *arr)
 {
-        unsigned int counter = 0;
-       
-        while (arr[counter] != '\0')
-                counter++;
+	unsigned int counter = 0;
 
-        return (counter);
-}       
+	while (arr[counter] != '\0')
+		counter++;
+
+	return (counter);
+}
 
 /**
  * str_concat - concatunate the two arrays
