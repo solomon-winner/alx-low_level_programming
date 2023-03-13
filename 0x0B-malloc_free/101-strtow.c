@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-int _length(char *s),_words(char *s);
+int _length(char *s), _words(char *s);
 char **strtow(char *s);
 
 /**
@@ -26,7 +26,7 @@ int _length(char *s)
 
 /**
  * _words - Counts the number of words
- * @str: The parameter
+ * @s: The parameter
  *
  * Return: The number of words
  */
