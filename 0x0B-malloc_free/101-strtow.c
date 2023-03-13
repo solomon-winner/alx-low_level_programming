@@ -62,7 +62,7 @@ char **strtow(char *str)
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
-	words = count_words(str);
+	words = _words(str);
 	if (words == 0)
 		return (NULL);
 
@@ -75,7 +75,7 @@ char **strtow(char *str)
 		while (str[index] == ' ')
 			index++;
 
-		letters = word_len(str + index);
+		letters = _length(str + index);
 
 		strings[w] = malloc(sizeof(char) * (letters + 1));
 
