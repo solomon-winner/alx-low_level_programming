@@ -23,7 +23,7 @@ int _length(char *N)
  * @destination: the destination
  * Return: destination
  */
-int *_copy(char *destination, char *source)
+char *_copy(char *destination, char *source)
 {
 	int num;
 
