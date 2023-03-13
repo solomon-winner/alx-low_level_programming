@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 	for (x = 0; x < ac; x++)
 	{
 		for (y = 0; av[x][y] != '\0'; y++)
-			c++;
+			z++;
 	}
 
 	c = c + ac + 1;
@@ -41,12 +41,12 @@ char *argstostr(int ac, char **av)
 
 		while (av [x][y] != '\0')
 		{
-			s[c] = av[x][y];
-			c++;
+			s[z] = av[x][y];
+			z++;
 			y++;
 		}
-		s[c] = '\n';
-		c++;
+		s[z] = '\n';
+		z++;
 		x++;
 	}
 
