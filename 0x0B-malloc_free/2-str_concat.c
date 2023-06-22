@@ -35,9 +35,9 @@ char *str_concat(char *s1, char *s2)
 	if (result == NULL)
 		return (NULL);
 
-	for (a = 0; a < len1; a++)
+	for (a = 0; a < length1; a++)
 		result[a] = s1[a];
-	for (b = 0; b < len2; b++, a++)
+	for (b = 0; b < length2; b++, a++)
 		result[a] = s2[b];
 	result[length] = '\0';
 
