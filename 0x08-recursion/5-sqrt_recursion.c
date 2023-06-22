@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *  natural - ... ...
- *  @n: input number
- *  @c: iterstor
+ *  @a: input number
+ *  @b: iterstor
  *  Return: square root of the number
  */
 int natural(int a, int b)
